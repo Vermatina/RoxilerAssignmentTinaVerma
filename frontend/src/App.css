@@ -1,0 +1,165 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin: 20px 0;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+  color: #444;
+}
+
+.container {
+  max-width: 1150px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+select {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 50%;
+}
+
+.statistics-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.statistics-box > div {
+  flex: 1;
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+thead {
+  background: #007bff;
+  color: white;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: center;
+  font-size: 16px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+input[type='text'] {
+  display: block;
+  margin: 50px auto;
+  padding: 12px;
+  width: 50%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  color: white;
+  background-color: #007bff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.recharts-wrapper {
+  margin: 20px auto;
+  text-align: center;
+}
+
+
+.dashboard-title {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.chart-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.chart-container > div {
+  flex: 1;
+  min-width: 300px;
+  max-width: 45%;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+      flex-direction: column;
+  }
+
+  .chart-container > div {
+      max-width: 100%;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none; 
+}
+
+body {
+  overflow-y: scroll;
+}
